@@ -12,7 +12,7 @@ Ansible Molecule located in the `molecule/` folder using Ubuntu 22 and [geerling
 ------------
 * Appium 1.22.3
 * Node.js 16.19.0
-* npm 16.19.0
+* npm 8.19.3
 
 ## Role Variables
 
