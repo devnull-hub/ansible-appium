@@ -1,0 +1,30 @@
+---
+galaxy_info:    
+  galaxy_name: appium
+  role_name: appium
+  author: vNull
+  description: Appium and Node.js installation for Linux
+  company: "devnull-hub"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.13
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - focal
+        - trusty
+        - xenial
+        - bionic
+  galaxy_tags:
+    - development
+    - web
+    - javascript
+    - js
+    - node
+    - npm
+    - nodejs
+    - appium
+
+dependencies: []

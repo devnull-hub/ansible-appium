@@ -1,0 +1,5 @@
+---
+# vars file for appium
+
+nodejs_npm_global_packages:
+  - name: appium
