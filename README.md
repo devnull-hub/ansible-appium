@@ -1,14 +1,18 @@
 # Ansible Role: Node.js with Appium Server
 
+**Issues:** npm global packages is not installing, so doing `shell:` install. I have seen this issue in multiple stackoverflow. "19.x" will not install on CentOS 7 missing lib's. Currently  works for testing purpose.
+
+Appium server setup of automation environment mobile testing.
+
 Installs Node.js with Appium on RHEL/CentOS or Debian/Ubuntu.
 
-An optimized Appium server setup of automation environment for appium testing.
+Ansible Molecule located in the `molecule/` folder using Ubuntu 22 and [geerlingguy][geerlingguy] [CentOS 7 Ansible Test Image][docker-centos7-ansible] image.
 
 ## Requirements
 ------------
 * Appium 1.22.3
-* Node.js 19.4.0
-* npm 9.2.0
+* Node.js 16.19.0
+* npm 16.19.0
 
 ## Role Variables
 
@@ -94,12 +98,14 @@ nodejs_npm_global_packages:
 
 ## License
 
-MIT / BSD
+MIT 
 
 ## Author Information
 
-vNull of devnull-hub has used a modified version of  [Jeff Geerling ansible-role-nodejs][ansible-role-nodejs]
+vNull of devnull-hub modified version of [Jeff Geerling ansible-role-nodejs][ansible-role-nodejs]
 
 
 [//]: Links
 [ansible-role-nodejs]: https://github.com/geerlingguy/ansible-role-nodejs
+[docker-centos7-ansible]: https://github.com/geerlingguy/docker-centos7-ansible
+[geerlingguy]: https://github.com/geerlingguy
